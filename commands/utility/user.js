@@ -1,8 +1,8 @@
-const {SlashCommandBiulder} = require('discord.js');
+const {SlashCommandBuilder} = require('discord.js');
 
-AutoModerationRule.exports={
-    data:new SlashCommandBiulder()
-        .sdetNmae('user')
+module.exports={
+    data:new SlashCommandBuilder()
+        .setName('user')
         .setDescription('provides information about the user'),
     async execute(interaction){
         //interaction.user is the object representing the User who ran the command
